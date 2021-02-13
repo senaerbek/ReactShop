@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj": {
+    "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj",
+        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj",
         "projectName": "Businness",
-        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj",
+        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj",
         "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\obj\\",
+        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Core\\Core.csproj": {
+    "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Core\\obj\\",
+        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,8 +130,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj"
+              "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj"
               }
             }
           }
@@ -206,14 +206,14 @@
         }
       }
     },
-    "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -229,8 +229,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Core\\Core.csproj"
+              "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Core\\Core.csproj"
               }
             }
           }
@@ -305,14 +305,14 @@
         }
       }
     },
-    "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj": {
+    "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -392,14 +392,14 @@
         }
       }
     },
-    "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -415,8 +415,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj": {
-                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj"
+              "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj": {
+                "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj"
               }
             }
           }

@@ -14,6 +14,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { useDispatch } from "react-redux";
 
 function Copyright() {
   return (
@@ -48,13 +49,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function RegisterComponent({ registerPersons, Register, ...props }) {
+export default function RegisterComponent() {
   const classes = useStyles();
 
-  const [registerPerson, setRegisterPerson] = useState({
-    ...props.registerPerson,
-  });
-  useEffect(() => {}, [props.registerPerson]);
+  const [registerPerson, setRegisterPerson] = useState({});
+  const dispatch = useDispatch();
+
+
+
   function handleChange(event) {
     const { name, value } = event.target;
     setRegisterPerson((previousPerson) => ({
@@ -64,7 +66,7 @@ function RegisterComponent({ registerPersons, Register, ...props }) {
   }
   function handleSave(event) {
     event.preventDefault();
-    Register(registerPerson);
+    dispatch(Register(registerPerson));
   }
 
   return (
@@ -160,15 +162,3 @@ function RegisterComponent({ registerPersons, Register, ...props }) {
     </Container>
   );
 }
-
-function mapStateToProps(state){
-    return {
-      registerPersons: state.registerReducer,
-    };
-     
-  }
-  const mapDispatchToProps = {
-    Register,
-  };
-
-export default connect(mapStateToProps,mapDispatchToProps) (RegisterComponent);

@@ -4,7 +4,13 @@ import InitialState from "../InitialState";
 export default function loginReducers (state=InitialState.login,action){
     switch (action.type) {
         case actionTypes.LOGIN_SUCCESS:
-            return action
+        
+            return {
+                ...state,
+                isLoggin : true,
+                loginUser : action.payload
+                
+                }
         default:
             return state;
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YR4eh1QSlFyjswlLXH2pkmNj7AXlTbwd0ar6H62UR2CQZsO/xjpW/RzR0BEWVn5/eI/uAHKFvkb2KaSYKbXjMQ==",
+  "dgSpecHash": "iakRm0LlMBGD05HKEAJEl9+0/s6J6iWFKfX1WF3q7a3dma3CQtqhrTYieRLPsRoxc6Lvi1awEZq4e3iHXerobQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\senae\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\senae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

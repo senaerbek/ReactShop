@@ -36,9 +36,15 @@ namespace Businness.Concrete
             return new SuccessDataResult<List<Trademark>>(_trademarkDal.GetList().ToList());
         }
 
-        public IDataResult<List<Trademark>> GetByStatus()
+        public IDataResult<List<Trademark>> GetByStatus(int statu)
         {
-            return new SuccessDataResult<List<Trademark>>(_trademarkDal.GetList(p=>p.Status == 1).ToList());
+            return new SuccessDataResult<List<Trademark>>(_trademarkDal.GetList(p=>p.Status == statu).ToList());
+        }
+
+        public IResult Update(Trademark trademark)
+        {
+            _trademarkDal.Update(trademark);
+            return new SuccessResult("güncellendi");
         }
     }
 }

@@ -31,11 +31,11 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
 
         }
-        
-        [HttpGet("status")]
-        public IActionResult GetListStatus()
+
+        [HttpGet("status/{statu}")]
+        public IActionResult GetListStatus(int statu)
         {
-            var result = _trademarkService.GetByStatus();
+            var result = _trademarkService.GetByStatus(statu);
             if (result.Success)
             {
                 return Ok(result.Data);
@@ -62,7 +62,7 @@ namespace WebAPI.Controllers
                     }
                 }
             }
-            trademark.Status = 1;
+            trademark.Status = 0;
             var ekle = _trademarkService.Add(trademark);
             if (ekle.Success)
             {
@@ -72,7 +72,29 @@ namespace WebAPI.Controllers
 
 
         }
-            [HttpDelete("{id}")]
+
+
+
+         [HttpPut("{id}")]
+        public IActionResult Update(Trademark trademark, int id)
+        {
+           var newTrademark = new Trademark{
+               Id = id,
+               Name = trademark.Name,
+               Image = trademark.Image,
+               Description = trademark.Description,
+               Status = 1
+           };
+            var result = _trademarkService.Update(newTrademark);
+            if (result.Success)
+            {
+                return Ok(result.Message);
+            }
+            return BadRequest(result.Message);
+        }
+
+
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             var t = new Trademark

@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
@@ -86,7 +85,7 @@ namespace WebAPI
 
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:3000"));
+                options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             });
 
 
@@ -122,7 +121,7 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader() /*get, post, put, delete, patch... izin ver*/);
+            app.UseCors(builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin() /*get, post, put, delete, patch... izin ver*/);
             app.UseHttpsRedirection();
 
             app.UseRouting();

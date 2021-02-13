@@ -21,16 +21,14 @@ class Filter extends Component {
           <div className="col-md-3">
             <div className="filter-sort">
               Order{" "}
-              <select
-              value={this.props.products.sort}
+              <select value={this.props.products.sort}
               onChange={(e) =>
                 this.props.actions.sortProducts(
                   this.props.products.filteredItems,
                   e.target.value
                 )
               }
-              >
-                <option value="id" >En Son</option>
+              ><option value="id" >En Son</option>
                 <option value="lowest">Düşük</option>
                 <option value="highest">Yüksek</option>
               </select>
@@ -39,17 +37,14 @@ class Filter extends Component {
           <div className="col-md-3">
             <div className="filter-size">
               Beden Seç{" "}
-              <select
-                value={this.props.products.size}
+              <select value={this.props.products.size}
                 onChange={(e) =>
                   this.props.actions.filterProducts(
                     this.props.products.items,
                     e.target.value
                   )
                 }
-              >
-              
-                <option value="ALL">Hepsi</option>
+              ><option value="ALL">Hepsi</option>
                 <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>

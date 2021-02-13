@@ -7,17 +7,18 @@ export function getTrademarkSuccess(trademark){
     };
 }
 
-export function getTrademarks(){
+export function getTrademarks(id){
     return function (dispatch){
-        let url = "https://localhost:5001/api/Trademark/status"
-      
+        let url = `https://localhost:5001/api/Trademark/status/${id}`
+        
         return fetch(url)
         .then(response=>response.json())
         .then(response=>dispatch(getTrademarkSuccess(response)))
     }
 }
 
-
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
 export function addTrademarkSuccess(trademark){
     return {
         type: actionTypes.ADD_TRADEMARK_SUCCESS,
@@ -31,25 +32,59 @@ export function addTrademarkApi(trademark){
     data.append('Name', trademark.Name)
     data.append('Description', trademark.Description)
 
-    return fetch("https://localhost:5001/api/Trademark", {
+
+    return fetch("https://localhost:5001/api/Trademark/status", {
       method: "POST",
       body:data,
 
-    }).then(handleResponse).then(
-        response=>  localStorage.setItem("token", response.token)
-     
-     )
+    }).then(handleResponse)
     .catch(handleError);
 }
 
 
+
 export function addTrademark(trademark){
-    return function(){
-        addTrademarkApi(trademark)
-        .then(response=>console.log(response))
+    return function(dispatch){
+        return addTrademarkApi(trademark)
+        .then(response=>dispatch(addTrademarkSuccess(trademark)))
         .catch(response => {throw response})
     }
 }
+
+
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
+export function updateTrademarkSuccess(trademark){
+    return {
+        type: actionTypes.UPDATE_TRADEMARK_SUCCESS,
+        payload:trademark
+    }
+}
+
+export function updateTrademarkApi(trademark){
+
+    return fetch("https://localhost:5001/api/Trademark", {
+      method: "PUT",
+      body:JSON.stringify(trademark),
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Headers": "PUT"
+      },
+
+    }).then(handleResponse)
+    .catch(handleError);
+}
+
+export function updateTrademark(trademark){
+    return function(dispatch){
+        return updateTrademarkApi(trademark)
+        .then(response=>dispatch(updateTrademarkSuccess(trademark)))
+        .catch(response => {throw response})
+    }
+}
+
+//---------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------
 
 
 export async function handleResponse(response){

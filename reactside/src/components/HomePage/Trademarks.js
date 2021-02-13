@@ -15,7 +15,7 @@ import Fade from "react-reveal/Fade"
 
 class Trademarks extends Component {
   componentDidMount() {
-    this.props.actions.getTrademarks();
+    this.props.actions.getTrademarks(1);
   
   }
 
@@ -62,7 +62,7 @@ class Trademarks extends Component {
                       
                       </Button>
                       <Button size="small" color="primary">
-                        Learn More
+                        
                       </Button>
                     </CardActions>
                   </Card>

@@ -26,8 +26,8 @@ export function registerApi(registerUser){
 
 export function Register(registerUser){
     return function(dispatch){
-        registerApi(registerUser)
-        .then(response => console.log(response))
+       return registerApi(registerUser)
+        .then(response => dispatch(registerSuccess(registerUser)))
         .catch(response => {throw response})
     }
     

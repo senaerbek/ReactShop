@@ -25,3 +25,17 @@ C:\Users\senae\source\repos\Jwt\Jwt\DataAccess\obj\Debug\netstandard2.0\DataAcce
 C:\Users\senae\source\repos\Jwt\Jwt\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\senae\source\repos\Jwt\Jwt\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\senae\source\repos\Jwt\Jwt\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\senae\source\repos\Jwt\shop\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

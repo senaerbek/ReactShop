@@ -1,4 +1,6 @@
 import { Route, Switch } from "react-router-dom";
+import Admin from "../../Admin/Admin";
+import AdminNav from "../../Admin/AdminNav";
 import Cart from "../Cart/Cart";
 import HomePage from "../HomePage/HomePage";
 import Products from "../HomePage/Products";
@@ -18,6 +20,7 @@ function App() {
        <Route path="/cart" exact component={Cart}/>
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
+        <Route path="/admin" component={Admin} />
       </Switch>
     </div>
   );

@@ -1,5 +1,6 @@
 export default {
     login:{},
+    isLoggin : false,
     register:{},
     categories:[],
     subCategories:[],

@@ -15,3 +15,12 @@ C:\Users\senae\source\repos\Jwt\Jwt\Entities\obj\Debug\netstandard2.0\Entities.A
 C:\Users\senae\source\repos\Jwt\Jwt\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
 C:\Users\senae\source\repos\Jwt\Jwt\Entities\obj\Debug\netstandard2.0\Entities.dll
 C:\Users\senae\source\repos\Jwt\Jwt\Entities\obj\Debug\netstandard2.0\Entities.pdb
+C:\Users\senae\source\repos\Jwt\shop\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\senae\source\repos\Jwt\shop\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\senae\source\repos\Jwt\shop\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\senae\source\repos\Jwt\shop\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\senae\source\repos\Jwt\shop\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\senae\source\repos\Jwt\shop\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\senae\source\repos\Jwt\shop\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\senae\source\repos\Jwt\shop\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\senae\source\repos\Jwt\shop\Entities\obj\Debug\netstandard2.0\Entities.pdb

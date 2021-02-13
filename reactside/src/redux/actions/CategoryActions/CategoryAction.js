@@ -24,7 +24,6 @@ export function getProductSuccess(product) {
     payload: product,
   };
 }
-
 export function getProduct(id) {
   return function (dispatch) {
     let url = "https://localhost:5001/api/Product/";
@@ -42,17 +41,12 @@ export function getProduct(id) {
 
 
 export const filterProducts = (products, size) => (dispatch) => {
-
-
-
     let wanted = [size]
     let res = products.filter(el =>
         el.availableSizes.some(
             i=>wanted.some(w=>w ===i.size)
         )
-        ).map(products=>products)
-        
-        
+        ).map(products=>products)   
   dispatch({
     type: actionTypes.FILTER_PRODUCT_BY_SİZE,
     payload: {
@@ -61,7 +55,6 @@ export const filterProducts = (products, size) => (dispatch) => {
         size === "ALL"
           ? products
           : res
-          
         }   
   });
 };

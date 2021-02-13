@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dR/k0urWC2jHTtRcv61VCvB/GtvRgxXg2wXSUm1y0emO12+BpWiFuKXaf3Z8cCNvBbUt9tLa9kPT3n3XzQevFA==",
+  "dgSpecHash": "UCinzOio8EIDLuSZbedNLyUZYpiv9Oo0JX8FgyORGSYgdLEd966U0AtVU3idjhs0t6lfqJegFHc7UQJZBhYA/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\senae\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\senae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

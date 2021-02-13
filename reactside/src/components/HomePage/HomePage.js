@@ -10,7 +10,7 @@ export default class HomePage extends Component {
         <Navigation />
         
         <div>
-        <CategoryNavigation/>
+
           <Trademarks />
         </div>
       </div>

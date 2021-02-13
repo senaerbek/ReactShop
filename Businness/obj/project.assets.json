@@ -7427,11 +7427,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj",
+      "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj",
       "projectName": "Businness",
-      "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj",
+      "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj",
       "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\obj\\",
+      "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7447,8 +7447,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\DataAccess\\DataAccess.csproj"
             }
           }
         }

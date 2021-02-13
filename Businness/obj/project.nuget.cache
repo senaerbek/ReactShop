@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1P9ono355W79N6FHrDnWLQ0eA07uG9uooPTK0LeAgtdD7Bcw/JCvoY+zjkXvmfseqZGpAhoDAqv1j8ePJZMLiA==",
+  "dgSpecHash": "X5e9ime4iKvhTG3yIsaHjlxNfLww7SR38WOwAWoUGXd+OqldpPCZJ0ec96J9TfAZrIbGcIVEgVOpnk2PYl5SaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj",
+  "projectFilePath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\senae\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\senae\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

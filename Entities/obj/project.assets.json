@@ -4112,11 +4112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",

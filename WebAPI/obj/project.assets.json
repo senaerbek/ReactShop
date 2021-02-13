@@ -8932,11 +8932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\senae\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\senae\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8952,8 +8952,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj": {
-              "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\Jwt\\Businness\\Businness.csproj"
+            "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj": {
+              "projectPath": "C:\\Users\\senae\\source\\repos\\Jwt\\shop\\Businness\\Businness.csproj"
             }
           }
         }
