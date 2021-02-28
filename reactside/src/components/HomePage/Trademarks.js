@@ -26,14 +26,19 @@ class Trademarks extends Component {
     return (
       <div>
     <Fade bottom cascade={true}>
+     
         {!this.props.trademarks.items ? (
-          <div style={{ textAlign: "center", margin: "200px" }}>loading...</div>
+          <div style={{ textAlign: "center", margin: "200px" }}>loading...
+        
+          </div>
+          
         ) : (
           <div className="container">
             <div className="row">
-       
+              <div className="col-lg-8">
+            {console.log(this.props.trademarks)}
               {this.props.trademarks.items.map((trademark) => (
-                <div key={trademark.id} className="col-lg-4">
+                <div key={trademark.id} >
                   <Card style={{ margin: "10px" }}>
                     <CardActionArea>
                       <CardMedia
@@ -66,8 +71,12 @@ class Trademarks extends Component {
                       </Button>
                     </CardActions>
                   </Card>
+                  
                 </div>
+                
               ))}
+             </div>
+             <div className="col-lg-4">Eklenecek</div>
             </div>
           </div>
         )}
@@ -79,7 +88,7 @@ class Trademarks extends Component {
 
 function mapStateToProps(state) {
   return {
-    trademarks: state.trademarkListReducer,
+    trademarks: state.trademarkAddReducer,
     products: state.productReducer
   };
 }

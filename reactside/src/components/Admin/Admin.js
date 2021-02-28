@@ -13,6 +13,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import ListIcon from "@material-ui/icons/List";
 import AdminTrademarkList from "./AdminTrademarkList";
 import AdminTrademarkCheckList from "./AdminTrademarkCheckList";
+import Chart from "./Chart";
 
 const drawerWidth = 240;
 
@@ -23,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
+    backgroundColor: "#002984",
   },
   drawer: {
     width: drawerWidth,
@@ -42,17 +44,16 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Admin() {
   const classes = useStyles();
-  const [page, setPage] = useState("Ürünler")
+  const [page, setPage] = useState("Grafikler");
 
-  const targetValue = event =>{
-    //console.log(event.target.innerText);
-    setPage(event.target.innerText)
-  }
+  const targetValue = (event) => {
+    setPage(event.target.innerText);
+  };
 
   return (
     <div className={classes.root}>
       <CssBaseline />
-     
+
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" noWrap>
@@ -68,47 +69,58 @@ export default function Admin() {
         }}
         anchor="left"
       >
-   <div>LOGO EKLENECEK</div>
+        <div>LOGO EKLENECEK</div>
         <div className={classes.toolbar} />
 
         <List>
-        <div onClick={(event)=>targetValue(event)}>
-          {/*['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          <div onClick={(event) => targetValue(event)}>
+            {/*['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))*/}
 
-          <ListItem button>
-            <ListItemIcon>
-              {" "}
-              <ListIcon />{" "}
-            </ListItemIcon>
-            <ListItemText primary={"Marka İstekleri"} />
-          </ListItem>
-          <Divider />
-          
-          <ListItem button>
-            <ListItemIcon>
-              {" "}
-              <ListIcon />{" "}
-            </ListItemIcon>
-            <ListItemText primary={"Onaylanan Markalar"} />
-          </ListItem>
-          <Divider/>
+            <ListItem button>
+              <ListItemIcon>
+                {" "}
+                <ListIcon />{" "}
+              </ListItemIcon>
+              <ListItemText primary={"Marka İstekleri"} />
+            </ListItem>
+            <Divider />
 
-          <ListItem button>
-            <ListItemIcon>
-              {" "}
-              <ListIcon />{" "}
-            </ListItemIcon>
-            <ListItemText primary={"Ürünler"} />
-          </ListItem>
-          <Divider/>
+            <ListItem button>
+              <ListItemIcon>
+                {" "}
+                <ListIcon />{" "}
+              </ListItemIcon>
+              <ListItemText primary={"Onaylanan Markalar"} />
+            </ListItem>
+            <Divider />
+
+            <ListItem button>
+              <ListItemIcon>
+                {" "}
+                <ListIcon />{" "}
+              </ListItemIcon>
+              <ListItemText primary={"Ürünler"} />
+            </ListItem>
+            <Divider />
+
+            <ListItem button>
+              <ListItemIcon>
+                {" "}
+                <ListIcon />{" "}
+              </ListItemIcon>
+              <ListItemText primary={"Grafikler"} />
+            </ListItem>
+            <Divider />
+
+
           </div>
         </List>
-     
+
         <List>
           {/*['All mail', 'Trash', 'Spam'].map((text, index) => (
             <ListItem button key={text}>
@@ -120,23 +132,28 @@ export default function Admin() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        
-        {page === "Ürünler" ? <div>
-          ürünler
-        </div>
-        :page === "Marka İstekleri" ? 
-        <div>
-          <Typography paragraph>
-          <AdminTrademarkList />
-        </Typography>
-        </div>  : 
-        <div>
-          <Typography paragraph>
-         <AdminTrademarkCheckList/>
-        </Typography>
-        </div>
-      }
-        
+
+        {page === "Ürünler" ? (
+          <div>ürünler</div>
+        ) : page === "Marka İstekleri" ? (
+          <div>
+            <Typography paragraph>
+              <AdminTrademarkList />
+            </Typography>
+          </div>
+        ) : page === "Onaylanan Markalar" ? (
+          <div>
+            <Typography paragraph>
+              <AdminTrademarkCheckList />
+            </Typography>
+          </div>
+        ) : (
+          <div>
+            <Typography paragraph>
+              <Chart />
+            </Typography>
+          </div>
+        )}
       </main>
     </div>
   );

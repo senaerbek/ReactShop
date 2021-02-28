@@ -9,7 +9,7 @@ import { getTrademarks } from "../../redux/actions/TrademarkActions/TrademarkAct
 import TrademarkJoinList from "./TrademarkJoinList";
 import { useDispatch, useSelector } from "react-redux";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import Fade from "react-reveal/Bounce"
+import Fade from "react-reveal/Pulse"
 
 const useStyles = makeStyles({
   root: {
@@ -102,10 +102,10 @@ export default function TrademarkAdd({}) {
                 </Button>
               </form>
               {isAdded.isAdded === true ? <div style ={{textAlign:"center"}}>
-             
+                <h2 style={{color: "#002984"}}>Eklendi</h2> 
                  <Fade bottom cascade={true}>
-                     <h2>Eklendi</h2> 
-              <CheckCircleIcon style={{ color: "#1769bb", fontSize: 200 }} />
+                  
+              <CheckCircleIcon style={{ color: "#002984", fontSize: 200 }} />
               </Fade>
               </div> : <div></div>}
              

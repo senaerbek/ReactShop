@@ -1,7 +1,7 @@
 import React, {  useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getTrademarks, updateTrademark } from "../redux/actions/TrademarkActions/TrademarkAction";
 import useTable from "../Admin/useTable";
+import {getAdminTrademarks, deleteTrademark} from "../../redux/actions/AdminActions/AdminAction"
 import { Button, TableBody, TableCell, TableRow } from "@material-ui/core";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -9,33 +9,38 @@ import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 import CancelOutlinedIcon from '@material-ui/icons/CancelOutlined';
 
 const headCells = [
-  { id: "id", label: "id" },
-  { id: "Name", label: "Name" },
-  { id: "Description", label: "Description" },
-  { id: "Image", label: "Image" },
-  { id: "Check", label: "Check" },
-  { id: "Delete", label: "Delete" },
+  { id: "id", label: "Marka Numarası" },
+  { id: "Name", label: "Marka Adı" },
+  { id: "Description", label: "Açıklaması" },
+  { id: "Image", label: "Resmi" },
+  { id: "Check", label: "Onayla" },
+  { id: "Delete", label: "Reddet" },
 ];
 
 export default function TrademarkList() {
   const dispatch = useDispatch();
-  const trademarks = useSelector((state) => state.trademarkListReducer);
+  const trademarks = useSelector((state) => state.adminTrademarkReducer);
+
   const {
     TblContainer,
     TblHead,
     TblPagination,
     recordsAfterPaggingAndSorting,
   } = useTable(trademarks, headCells);
+
   useEffect(() => {
-    dispatch(getTrademarks(0));
+    dispatch(getAdminTrademarks(0));
   }, []);
 
 
- const checkTrademark = id =>{
-    console.log(id);
-    dispatch(updateTrademark(id))
+ const deleteT = (id) =>{
+    dispatch(deleteTrademark(id))
+    alert("silindi");
   }
 
+  const updateT = (id) =>{
+    window.confirm(id)
+  }
 
   return (
     <div>
@@ -67,8 +72,8 @@ export default function TrademarkList() {
                       />
                     </CardActionArea>
                   </TableCell>
-                  <TableCell><Button style={{backgroundColor : "green"}} onClick={() => checkTrademark(item.id)}><CheckCircleOutlineIcon/></Button></TableCell>
-                  <TableCell><Button style={{backgroundColor : "red"}} onClick={() => checkTrademark(item.id)}><CancelOutlinedIcon/></Button></TableCell>
+                  <TableCell><Button style={{backgroundColor : "#76ff03"}}  onClick={() => updateT(item.id)} ><CheckCircleOutlineIcon/></Button></TableCell>
+                  <TableCell><Button style={{backgroundColor : "#ff3d00"}} onClick={() => deleteT(item.id)}><CancelOutlinedIcon/></Button></TableCell>
                 </TableRow>
               ))}
             </TableBody>

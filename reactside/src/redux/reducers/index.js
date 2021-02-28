@@ -4,9 +4,9 @@ import registerReducer from "./LoginRegisterReducers/registerReducer"
 import changeCategoryReducer from "./CategoryReducers/changeCategoryReducer"
 import categoryListReducer from "./CategoryReducers/categoryListReducer"
 import productReducer from "./CategoryReducers/productReducer"
-import trademarkListReducer from "./TrademarkReducers/trademarkListReducer"
 import trademarkAddReducer from "./TrademarkReducers/trademarkAddReducer"
 import cartReducer from   "./CartReducers/cartReducer"
+import adminTrademarkReducer from "./AdminReducers/AdminReducer"
 
 const rootReducer = combineReducers({
   loginReducer,
@@ -14,8 +14,8 @@ const rootReducer = combineReducers({
   changeCategoryReducer,
   categoryListReducer,
   productReducer,
-  trademarkListReducer,
   trademarkAddReducer,
-  cartReducer
+  cartReducer,
+  adminTrademarkReducer
 });
 export default rootReducer;

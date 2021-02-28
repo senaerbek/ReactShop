@@ -18,7 +18,9 @@ class TrademarkJoinList extends Component {
         {!this.props.trademarks.items ? (
           <div style={{ textAlign: "center", margin: "200px" }}>loading...</div>
         ) : (
+
           <div className="container">
+            {console.log(this.props.trademarks)}
             <div className="row">
               <div className="col-sm-12">
                 <h2 style={{ textAlign: "center", fontFamily: "monospace" }}>
@@ -26,12 +28,12 @@ class TrademarkJoinList extends Component {
                 </h2>
               </div>
 
-              {this.props.trademarks.items.slice(0, 24).map((t) => (
-                <div className="col-sm-2" style={{ marginTop: "30px" }}>
+              {this.props.trademarks.items.slice(0, 18).map((t) => (
+                <div className="col-sm-2" style={{ marginTop: "15px" }}>
                   <Card
                     style={{
-                      width: "80px",
-                      height: "80px",
+                      width: "150px",
+                      height: "150px",
                       borderRadius: "50%",
                       margin: "10px",
                     }}
@@ -58,7 +60,7 @@ class TrademarkJoinList extends Component {
 
 function mapStateToProps(state) {
   return {
-    trademarks: state.trademarkListReducer,
+    trademarks: state.trademarkAddReducer,
     products: state.productReducer,
   };
 }

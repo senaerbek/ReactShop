@@ -1,6 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import Admin from "../../Admin/Admin";
-import AdminNav from "../../Admin/AdminNav";
+import Admin from "../Admin/Admin";
 import Cart from "../Cart/Cart";
 import HomePage from "../HomePage/HomePage";
 import Products from "../HomePage/Products";

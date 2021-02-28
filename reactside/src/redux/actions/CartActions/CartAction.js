@@ -20,6 +20,7 @@ export const addToCart = (product) => (dispatch, getState) => {
 };
 
 export const removeFromCart = (product) => (dispatch, getState) => {
+  console.log(getState().cartReducer.cartItems);
   const cartItems = getState().cartReducer.cartItems.slice()
     .filter((x) => x.id !== product.id);
   dispatch({ 

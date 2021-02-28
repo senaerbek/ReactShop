@@ -1,11 +1,10 @@
 import React, {  useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getTrademarks, updateTrademark } from "../redux/actions/TrademarkActions/TrademarkAction";
+import { getAdminTrademarks } from "../../redux/actions/AdminActions/AdminAction";
 import useTable from "../Admin/useTable";
-import { Button, TableBody, TableCell, TableRow } from "@material-ui/core";
+import {  TableBody, TableCell, TableRow } from "@material-ui/core";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
-import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
 const headCells = [
   { id: "id", label: "id" },
@@ -16,7 +15,7 @@ const headCells = [
 
 export default function TrademarkList() {
   const dispatch = useDispatch();
-  const trademarks = useSelector((state) => state.trademarkListReducer);
+  const trademarks = useSelector((state) => state.adminTrademarkReducer);
   const {
     TblContainer,
     TblHead,
@@ -24,7 +23,7 @@ export default function TrademarkList() {
     recordsAfterPaggingAndSorting,
   } = useTable(trademarks, headCells);
   useEffect(() => {
-    dispatch(getTrademarks(1));
+    dispatch(getAdminTrademarks(1));
   }, []);
 
 

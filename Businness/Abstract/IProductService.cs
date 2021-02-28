@@ -9,6 +9,7 @@ namespace Businness.Abstract
    public interface IProductService
     {
         IDataResult<List<Product>> GetAll();
+         IDataResult<List<Product>> GetByCategory(int id);
         IDataResult<Product> GetById(int id);
         IDataResult<List<Product>> GetBySubTrademarkId(int sCID);
         IResult Add(Product product);

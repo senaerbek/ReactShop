@@ -75,39 +75,8 @@ namespace WebAPI.Controllers
 
 
 
-         [HttpPut("{id}")]
-        public IActionResult Update(Trademark trademark, int id)
-        {
-           var newTrademark = new Trademark{
-               Id = id,
-               Name = trademark.Name,
-               Image = trademark.Image,
-               Description = trademark.Description,
-               Status = 1
-           };
-            var result = _trademarkService.Update(newTrademark);
-            if (result.Success)
-            {
-                return Ok(result.Message);
-            }
-            return BadRequest(result.Message);
-        }
-
-
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            var t = new Trademark
-            {
-                Id = id,
-            };
-            var result = _trademarkService.Delete(t);
-            if (result.Success)
-            {
-                return Ok(result.Message);
-            }
-            return BadRequest(result.Message);
-        }
+         
+        
 
     }
 

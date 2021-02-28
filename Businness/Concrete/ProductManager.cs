@@ -44,6 +44,11 @@ namespace Businness.Concrete
              return new SuccessDataResult<List<Product>>(_productDal.GetWithSizesById(sCID).ToList());
         }
 
+        public IDataResult<List<Product>> GetByCategory(int id)
+        {
+             return new SuccessDataResult<List<Product>>(_productDal.GetList(p=>p.CategoryId == id).ToList());
+        }
+
         public Product ProductExists(string productName)
         {
             var cName = _productDal.Get(p => p.ProductName== productName);

@@ -13,13 +13,13 @@ export default class Navigation extends Component {
     return (
       <div>
         <Navbar style={{ backgroundColor: "#1769aa" }} expand="lg">
-          <Navbar.Brand href="/">Marka</Navbar.Brand>
+          <Navbar.Brand href="/">ReactShop</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/products">Tüm Ürünler</Nav.Link>
-              <Nav.Link href="#link">Link</Nav.Link>
-            {/*  <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+
+              <NavDropdown title="Eklenecek" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -31,7 +31,7 @@ export default class Navigation extends Component {
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
                 </NavDropdown.Item>
-    </NavDropdown>*/}
+              </NavDropdown>
             </Nav>
             <Form inline>
               <FormControl
@@ -39,21 +39,19 @@ export default class Navigation extends Component {
                 placeholder="Search"
                 className="mr-sm-2"
               />
-              <Button style={{ marginRight: "500px" }} variant="outline-info">
-                Search
-              </Button>
-              <Button href="/cart">
+              <Button variant="outline-success">Search</Button>
+            </Form>
+            <Nav.Link href="/cart">
+              <Button>
                 <ShoppingCartSharpIcon>Sepete Git</ShoppingCartSharpIcon>
                 Sepete Git
               </Button>
-              <Button href="/login" style={{ marginLeft: "20px" }}>
-                <PersonIcon>Sepete Git</PersonIcon>
-                Giriş Yap
-              </Button>
-            </Form>
+            </Nav.Link>
+            <Nav.Link href="/login">
+              <Button href="/login"> <PersonIcon></PersonIcon> Giriş Yap</Button>
+            </Nav.Link>
           </Navbar.Collapse>
         </Navbar>
-
         <br />
       </div>
     );
